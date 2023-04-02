@@ -1,0 +1,14 @@
+*** Settings ***
+Library           seleniumLibrary
+
+*** Variables ***
+${BROWSER}        chrome
+${URL}            http://automationpractice.com/index.
+
+*** Test Cases ***
+Caso de teste 01: Pesquisar um produto no Site
+    Acessar a página home do site da loja
+
+*** Keywords ***
+Open Browser 
+    Open Browser    url=${URL}    browser=${BROWSER}
